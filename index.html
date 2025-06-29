@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajesh Rokaya--GIS Analyst Portfolio</title>
+    <title>Rajesh Rokaya -- Gis Analyst/Portfolio </title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/43649c59a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#port">Activity</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
          <div class="header_text">
            <p>Geomatics Student</p>
@@ -30,22 +34,25 @@
                     <img src="a.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I’m a Geomatics Engineering student at Kathmandu
+                    <h2 class="sub-title">About Me</h2>
+                    <p class="para">I’m a Geomatics Engineering student at Kathmandu
                         University Dhulikhel, Kavre with a strong interest in
                         mapping, surveying, and using geospatial tools like GIS
-                        and remote sensing.</p>
+                        and remote sensing.<br><br><b>My expertise:</b> Satellite image processing,land cover analysis,spatial databases, and collaborative geo-projects.I love turning data into actionable stories and helping organizations make smarter, map-driven decisions.</p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('Education')">Education</p>
-                            <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+                            <p class="tab-links active-link" onclick="opentab('Skills')"><b>Skills</b></p>
+                            <p class="tab-links" onclick="opentab('Education')"><b>Education</b></p>
+                            <p class="tab-links" onclick="opentab('Hobbies')"><b>Hobbies</b></p>
                         </div>
                         
                         <div class="tab-contents active-tab" id="Skills">
                             <ul>
                                 <li><span>Surveying & Mapping</span><br>Total Station, DGPS Surveying, AutoCAD, SWDTM</li>
+                                <br>
                                 <li><span>Geospatial Tools</span><br>QGIS, ArcGIS, Remote Sensing</li>
+                                <br>
                                 <li><span>Data & Office Tools</span><br>Excel, Word, PowerPoint</li>
+                                <br>
                                 <li><span>Basic Programming</span><br>Python, HTML, CSS, JavaScript</li>
                             </ul>
                         </div>
@@ -53,7 +60,9 @@
                         <div class="tab-contents" id="Education">
                             <ul>
                                 <li><span>Secondary Level (2008–2018)</span><br>Muna Memorial Academy Dehimandu Doti</li>
+                                <br>
                                 <li><span>Higher Secondary (2018–2020)</span><br>Kailali Multiple Campus, Dhangadhi, Kailali</li>
+                                <br>
                                 <li><span>Bachelor Degree (2021–2025)</span><br>BE in Geomatics Engineering, Kathmandu University<br>Dhulikhel, Kavre</li>
                             </ul>
                         </div>
@@ -61,7 +70,9 @@
                         <div class="tab-contents" id="Hobbies">
                             <ul>
                                 <li><span>Outdoor Games</span><br>Volleyball, Basketball, and Athletics</li>
+                                <br>
                                 <li><span>Reading Books</span><br></li>
+                                <br>
                                 <li><span>Listening to Music</span></li>
                             </ul>
                         </div>
@@ -70,51 +81,109 @@
             </div>
         </div>
     </div>
+<!-- Projects -->
+    <div id="services">
+        <div class="containers">
+            <h1 class="Sub-title"> My Projects </h1>
+        <div class="services-list">
+            <div>
+                <img src="photogrammetry.jpg">
+                 <h2><b>Topographic Map Preparation Using UAV Generated Orthomosaic</b></h2>
+                  <p>
+                    This study involves preparing detailed topographic maps by processing high-resolution orthomosaics generated from UAV imagery, enabling accurate terrain analysis, elevation extraction, and feature mapping for geospatial applications using Pix4D software.
+                </p>
+               <a href="Photogrammetry.pdf" class="see-more-btn"> See more</a>
+             </div>
+             <div>
+                <img src="arcgis.jpg">
+                <h2><b>Surface Irrigation Suitability Mapping Using Arc Gis and AHP</b></h2>
+                   <p>
+                    This study assesses land suitability for surface irrigation by integrating Analytical Hierarchy Process (AHP) with ArcGIS to analyse factors like soil, slope, and proximity to water sources efficiently.
+                       </p>
+                    <a href="Gis_suitability.pdf" class="see-more-btn">See more</a>
+            </div>
+            <div>
+                <img src="postgis.png">
+                     <h2><b>Find Shortest route of Starting point from  
+Home location(Doti,Lamikhal) to Destination point (KU) </b></h2>
+                        <p>
+                      This analysis identifies the shortest route from Lamikhal, Doti, Nepal (home location) to Kathmandu University (KU) using GIS network analysis for optimal travel distance and time estimation using PostGis, postgres and QGIS.
+                      </p>
+                    <a href="Postgis_Qgis.pdf" class="see-more-btn">See more</a>
+              </div>
+            </div>
+        </div>
+    </div>
+<!-- The information of my work -->
     <div id="port">
         <div class="container">
-            <h1 class="sub">My Work</h1>
+            <h2 class="sub">My Activities</h2>
             <div class="work-list">
-            <div class="work">
-                 <img src="work1.jpeg"></div>
-                 <div class="work">
-                    <img src="work3.jpeg"></div>
-                    <div class="work">
-                        <img src="work2.jpeg"></div>
+            <!-- <div class="work"> -->
+                <div>
+                 <img src="work1.jpeg">
+                 <h2><b>Using Smartphone Social Media Apps</b></h2>
+                  <p>
+                   To uses a smartphone to access various social media apps for connection and communication..
+                 </p>
+                 </div>
+                 <!-- <div class="work"> -->
+                <div>
+                 <img src="work3.jpeg">
+                 <h2><b>Reading Books with coffee and Reading glasses </b></h2>
+                  <p>
+                    Reading glasses, books, and coffee on a wooden table symbolize peaceful study and focused learning.
+                 </p>
+                </div>
+                    <!-- <div class="work"> -->
+                <div>
+                 <img src="work2.jpeg">
+                 <h2><b>Playing Volleyball at Sunset</b></h2>
+                  <p>
+                    Players are enjoying an energetic volleyball game during a beautiful evening sunset to boost their Physical and Mental Health.
+                 </p>
+                </div>
              </div>
         </div>
     </div>
     <div style="text-align: center; margin-top: 20px;">
-        <a href="more-portfolio.html" class="see-more-btn">See More</a>
+        <a href="https://en.wikipedia.org/wiki/Social_media" class="see-more-btn">See More</a>
       </div>
+
+
+
       <!-- ----Contact---- -->
       <div id="contact">
+        <h1 class="sub-titles">Contact Me</h1>
+        <br>
       <div class="containerss">
         <div class="contact-left">
-          <h1 class="sub-titles">Contact Me</h1>
-          <p><i class="fa-solid fa-square-envelope"></i><span class="s">Email</span>:rajeshrokaya758@gmail.com</p>
-          <p><i class="fa-solid fa-phone-volume"></i> Phone No:9865947490</p>
+          <p><i class="fa-solid fa-envelope"></i><span class="s">  Email </span>: rajeshrokaya758@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>  Phone No: 9865947490</p>
           <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/rajesh.rokaya.146"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@rajeshrokaya-j4l"><i class="fa-brands fa-youtube"></i></i></a>
+            <a href="https://www.instagram.com/_rajesh_rokaya/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rajesh-rokaya-2a37bb357/"><i class="fab fa-linkedin"></i></a>
           </div>
+          <br>
           <a href="my_cv.pdf" Download class="see-more-btn">Download CV</a>
         </div>
     
         <div class="contact-right">
-          <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+          <form name='submit-to-google-sheet'>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
             <button type="submit">Submit</button>
           </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
     <!-- ---Fotter--- -->
    <div class ="copyright"><p>
-    Copyright&copy; Rajesh. Made with <i class="fa-solid fa-heart"></i> simple portfolio
+    Copyright&copy; Rajesh. Made with <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-thumbs-up"></i> simple portfolio <i class="fa-solid fa-face-smile"></i>
    </p></div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -131,5 +200,27 @@
             document.getElementById(tabname).classList.add("active-tab"); 
         }
     </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxL2j18OWqWrYd64Y9y5hW_BvlHGkRMzOqxBZYfp2VqwevfgTl8UHfLBDJ8cKtZoEQ1/exec'
+  const form = document.forms['submit-to-google-sheet']
+ const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => 
+        {msg.innerHTML= "Message sent Successfully"; setTimeout (function(){msg.innerHTML = "";},2000); form.reset()}
+      )
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-160px";
+    }
+</script>
 </body>
 </html>
