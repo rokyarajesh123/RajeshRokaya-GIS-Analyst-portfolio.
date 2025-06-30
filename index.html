@@ -6,6 +6,9 @@
     <title>Rajesh Rokaya -- Gis Analyst/Portfolio </title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/43649c59a4.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 </head>
 <body>
     <div id="header">
@@ -16,6 +19,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Projects</a></li>
                     <li><a href="#port">Activity</a></li>
+                    <li><a href="#sp"> Spatial_Tools</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -37,8 +41,7 @@
                     <h2 class="sub-title">About Me</h2>
                     <p class="para">I’m a Geomatics Engineering student at Kathmandu
                         University Dhulikhel, Kavre with a strong interest in
-                        mapping, surveying, and using geospatial tools like GIS
-                        and remote sensing.<br><br><b>My expertise:</b> Satellite image processing,land cover analysis,spatial databases, and collaborative geo-projects.I love turning data into actionable stories and helping organizations make smarter, map-driven decisions.</p>
+                        mapping, surveying, and using geospatial tools like GIS and remote sensing.<br><br><b>My expertise:</b> Satellite image processing,land cover analysis,spatial databases, and collaborative geo-projects.I love turning data into actionable stories and helping organizations make smarter, map-driven decisions.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('Skills')"><b>Skills</b></p>
                             <p class="tab-links" onclick="opentab('Education')"><b>Education</b></p>
@@ -116,7 +119,7 @@ Home location(Doti,Lamikhal) to Destination point (KU) </b></h2>
     </div>
 <!-- The information of my work -->
     <div id="port">
-        <div class="container">
+        <div class="containar">
             <h2 class="sub">My Activities</h2>
             <div class="work-list">
             <!-- <div class="work"> -->
@@ -150,7 +153,20 @@ Home location(Doti,Lamikhal) to Destination point (KU) </b></h2>
         <a href="https://en.wikipedia.org/wiki/Social_media" class="see-more-btn">See More</a>
       </div>
 
+ <!--   spatial tool using leaflet -->
 
+<div id="sp">
+    <p>Spatial Tools</p>
+     <div class ="containerrr">
+  <ul>
+    <li><button onclick="activateTool1()"> Tool_1 (step-1):  Mark Location</button></li>
+    <li><button onclick="activateTool2()">Tool_2  (step-2):  Route (Distance) to Another</button></li>
+    <li><button onclick="activateTool3()">Tool_3  (step-3):  Buffer of 20km</button></li>
+  </ul>
+</div>
+ <div id="map">
+ </div>
+</div>
 
       <!-- ----Contact---- -->
       <div id="contact">
@@ -223,5 +239,14 @@ Home location(Doti,Lamikhal) to Destination point (KU) </b></h2>
         sidemenu.style.right="-160px";
     }
 </script>
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Turf.js -->
+<script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+<!-- Custom JS -->
+<script src="script1.js"></script>
 </body>
 </html>
