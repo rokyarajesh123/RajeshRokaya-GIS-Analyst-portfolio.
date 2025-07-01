@@ -11,7 +11,7 @@ background: #080808;
 color: #fff;
 }
 #header{
-    width: 100%;
+    width: 150%;
     height: 120vh;
     background-image:url(Photo.jpg) ;
     background-size: cover;
