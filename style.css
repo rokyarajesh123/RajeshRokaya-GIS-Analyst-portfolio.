@@ -455,10 +455,10 @@ nav .fa-solid{
 }
 @media only screen and (max-width:600px){
    #header{
-    background-image: url(Photo.png);
+    background-image: url(Photo1.jpg);
        .header_text{
       margin-left: 10%;
-      margin-top: 60%;
+      margin-top: 50%;
   
     }
   }
@@ -467,7 +467,7 @@ nav .fa-solid{
   display: block;
   font-size: 33px;
   top: 22px;
-  right: -90px;
+  right: -85px;
 }
 nav ul{
   background: #e05757;
@@ -515,21 +515,14 @@ nav ul .fa-solid{
   background: #0b0000;
   padding: 10px;
  }
- .about-col-1{
+ .container{
   padding-left: 65px;
   width: 100%;
-  margin-left:-40px;
-
-}
-.header_text{
-  margin-left: -10px;
-   width: 100%;
-   padding-left: -20px;
-} 
+  margin-left:-30px;
+ }
 .containers{
   padding-left: 65px;
   width:100%;
-  padding-left: 40px;
 }
 .containar{
    padding-left: 65px;
