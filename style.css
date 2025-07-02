@@ -11,16 +11,17 @@ background: #080808;
 color: #fff;
 }
 #header{
-    width: 150%;
-    height: 120vh;
-    background-image:url(Photo.jpg) ;
+    width: 100%;
+    height: 100vh;
+    background-image:url(Photo.png) ;
     background-size: cover;
-    background-position: center;
-  padding-right: 10px;
-    background-attachment:fixed;
+    background-position:center;
+  /* padding-right: 10px; */
+  background-attachment:fixed;
+
 }
 .container{
-    /* padding: 10px 20%; */
+  /* padding: 10px 20%;  */
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 10px;
@@ -36,8 +37,6 @@ ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    font-size: 20px;
-    align-items: flex-end;
     
    
 }
@@ -65,14 +64,13 @@ nav ul li a:hover::after {
   }
 
 .header_text{
-    margin: 30%;
     font-size: 22px;
-    margin-left: 5%;
-    margin-top: 20%;
+    margin-left: 10%;
+    margin-top: 15%;
 }
 .header_text h1{
     font-size: 40px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .header_text h1 span{
     color:#ff004f;
@@ -107,7 +105,7 @@ nav ul li a:hover::after {
     padding-left: 10px;
     padding-bottom: 20px;
     height: 70vh;
-    margin-left: 100px;
+    margin-left: 80px;
     
 }
 .about-col-2{
@@ -456,11 +454,11 @@ nav .fa-solid{
   display: none;
 }
 @media only screen and (max-width:600px){
-  #header{
-    background-image: url(Photo1.jpg);
+   #header{
+    background-image: url(Photo.png);
        .header_text{
       margin-left: 10%;
-      margin-top: 50%;
+      margin-top: 60%;
   
     }
   }
@@ -469,7 +467,7 @@ nav .fa-solid{
   display: block;
   font-size: 33px;
   top: 22px;
-  right: -85px;
+  right: -90px;
 }
 nav ul{
   background: #e05757;
@@ -516,15 +514,22 @@ nav ul .fa-solid{
  nav {
   background: #0b0000;
   padding: 10px;
-}
-.container{
+ }
+ .about-col-1{
   padding-left: 65px;
   width: 100%;
-  margin-left:-30px;
+  margin-left:-40px;
+
 }
+.header_text{
+  margin-left: -10px;
+   width: 100%;
+   padding-left: -20px;
+} 
 .containers{
   padding-left: 65px;
   width:100%;
+  padding-left: 40px;
 }
 .containar{
    padding-left: 65px;
